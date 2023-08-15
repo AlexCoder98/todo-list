@@ -1,0 +1,116 @@
+.add-todo-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.add-task-input-container {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.add-task-input,
+.add-task-btn {
+    font-size: 30px;
+    color: #474747;
+    border: none;
+}
+
+.add-task-input {
+    flex-grow: 1;
+    padding: 5px 0 5px 10px;
+    color: #464646;
+    font-weight: bold;
+    outline: none;
+}
+
+.add-task-input::placeholder {
+    font-size: 24px;
+    color: #737373;
+    font-weight: normal;
+    transition: .2s linear;
+}
+
+.add-task-input:focus::placeholder {
+    font-size: 22px;
+}
+
+.add-task-btn {
+    padding: 0 20px;
+    line-height: 20px;
+    color: rgb(35, 35, 35);
+    background-color: rgb(246, 246, 246);
+    transition: .3s linear;
+}
+
+.add-task-btn:hover {
+    color: black;
+    background-color: rgb(248, 212, 8);
+}
+
+/* input[type="checkbox"] {
+    clip-path: circle(46% at 50% 50%);
+} */
+
+input[type="checkbox"]+label {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #f6f6f6;
+    text-shadow: 0 0 2px #2a2a2a;
+
+}
+
+input[type="checkbox"],
+label {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+
+    .add-task-input,
+    .add-task-btn {
+        font-size: 28px;
+    }
+
+    .add-task-input::placeholder {
+        font-size: 22px;
+    }
+
+    .add-task-input:focus::placeholder {
+        font-size: 21px;
+    }
+
+    input[type="checkbox"]+label {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .add-task-input,
+    .add-task-btn {
+        font-size: 24px;
+    }
+
+    .add-task-input::placeholder {
+        font-size: 21px;
+    }
+
+    .add-task-input:focus::placeholder {
+        font-size: 20px;
+    }
+
+    .add-task-btn {
+        line-height: 15px;
+    }
+
+    input[type="checkbox"]+label {
+        font-size: 12px;
+    }
+}

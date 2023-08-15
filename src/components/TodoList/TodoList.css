@@ -1,0 +1,41 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #797979;
+}
+
+.list-container.active {
+    margin-bottom: 5%;
+    background-color: rgb(14, 223, 84);
+}
+
+.list-container.done {
+    background-color: rgb(245, 32, 32);
+}
+
+.list-container h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: center;
+    color: #f6f6f6;
+    text-shadow: 0 0 5px #2a2a2a;
+}
+
+.list-container ul {
+    list-style: none;
+}
+
+.list-container.done>ul li h4 {
+    text-decoration: line-through;
+}
+
+@media (max-width: 1024px) {
+    .list-container h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+}
